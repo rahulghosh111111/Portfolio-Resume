@@ -47,6 +47,7 @@ export default function Home() {
 
   return (
     <>
+    
       <div className="text-white mt-25 text-4xl text-center aurora-text font-bold">
       Dream. Develop. Disrupt.
       </div>
