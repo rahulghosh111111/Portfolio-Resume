@@ -1,5 +1,5 @@
 "use client";
-import java from "../../../public/icons/java.svg" 
+
 
 const icons = [
   { name: "typescript", label: "TypeScript", color: "3178C6" },
