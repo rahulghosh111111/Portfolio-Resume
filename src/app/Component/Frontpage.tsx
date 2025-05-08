@@ -74,7 +74,7 @@ export default function Home() {
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-800 shadow-lg active:scale-95 transition-transform duration-150">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#0b0c10] rounded-md group-hover:bg-opacity-0">
                 <a
-                  href="https://drive.google.com/file/d/1RbMdmwkCKZx5Sdj7WCX4H3sFxQrug3j4/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1W9adFqPhh_j04wSseIMCBfBwY8QTTuPQ/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

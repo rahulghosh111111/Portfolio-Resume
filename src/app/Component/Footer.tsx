@@ -117,7 +117,7 @@ const Footer = () => {
           </p>
           <button className="bg-blue-500 mt-5 text-white font-bold p-3 rounded-md transition transform hover:scale-105 active:scale-95 shadow-lg">
             <a
-              href="https://drive.google.com/file/d/1RbMdmwkCKZx5Sdj7WCX4H3sFxQrug3j4/view"
+              href="https://drive.google.com/file/d/1W9adFqPhh_j04wSseIMCBfBwY8QTTuPQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
