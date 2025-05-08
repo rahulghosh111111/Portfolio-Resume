@@ -1,9 +1,11 @@
 "use client";
+import java from "../../../public/icons/java.svg" 
 
 const icons = [
   { name: "typescript", label: "TypeScript", color: "3178C6" },
   { name: "javascript", label: "JavaScript", color: "F7DF1E" },
-  {name: "java", label: "Java", color: "fff" },
+
+  // {name: "java", label: "java", color: "fff" },
   // { name: "visualstudiocode", label: "VS Code", color: "007ACC" },
   { name: "vercel", label: "Vercel", color: "000000" },
   { name: "react", label: "React", color: "61DAFB" },
@@ -58,6 +60,7 @@ const IconsGrid = () => {
           </div>
         ))}
       </div>
+      
     </div>
           
     </>

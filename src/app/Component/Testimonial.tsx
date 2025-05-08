@@ -7,20 +7,26 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "Rahul Ghosh",
+    name: "Sudeep Kumar manna",
     comment: "Always reliable during projects, easy to work with, and quick to figure things out.",
     image: "https://res.cloudinary.com/dgzfetdxv/image/upload/f_auto,q_auto/hncswxe0dujwx8qv8gny",
   },
   {
     id: 2,
-    name: "Soham Choudhary",
-    comment: "Good at solving issues calmly, and always ready to discuss ideas without rushing things.",
+    name: "Soumyadeep Maity",
+    comment: "Good at solving issues calmly,open to suggestions, and made team work smoother. ",
     image: "https://res.cloudinary.com/dgzfetdxv/image/upload/f_auto,q_auto/vll3ca3gensgdnw1jsuk",
   },
   {
     id: 3,
+    name: "Indulekha Dash",
+    comment: "Balanced independent work with team coordination, and remained open to new ideas.",
+    image: "https://res.cloudinary.com/due7g7gky/image/upload/v1746683841/czidg3rhczsyvahcoldu.jpg",
+  },
+  {
+    id: 3,
     name: "Gaurav Thakur",
-    comment: "Focused during tasks, open to suggestions, and made team work smoother.",
+    comment: "Focused during tasks, and always ready to discuss ideas without rushing things.",
     image: "https://res.cloudinary.com/dgzfetdxv/image/upload/f_auto,q_auto/p0ovkwavrtyegkk7l2ys",
   },
 ];

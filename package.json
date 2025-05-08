@@ -20,6 +20,7 @@
     "lucide-react": "^0.479.0",
     "motion": "^12.10.1",
     "next": "15.2.1",
+    "next-cloudinary": "^6.16.0",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
