@@ -49,19 +49,19 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-row mt-10 h-screen  bg-[#0b0c10]">
-        <div className="flex flex-col items-center justify-center w-full text-center">
-          <div className="text-white  text-4xl text-center aurora-text font-bold">
+      <div className="flex flex-col-reverse lg:flex-row mt-8 min-h-screen bg-[#0b0c10]">
+        {/* Left: Text Content */}
+        <div className="flex flex-col items-center justify-center w-full text-center px-4 py-8 lg:px-10">
+          <div className="text-white text-4xl text-center aurora-text font-bold">
             Dream. Develop. Disrupt.
           </div>
-          <h2 className="text-center mt-1 text-xl">I&apos;m Rahul Ghosh</h2>
-          <p className="text-center max-w-2xl mx-auto mt-2 poppins-font text-[#6b8994]">
-            A driven engineer committed to lifelong learning, crafting impactful solutions, and approaching real-world challenges with innovation and attention to detail.
-
-
+          <h2 className="text-center mt-2 text-xl">I'm Rahul Ghosh</h2>
+          <p className="text-center max-w-2xl mx-auto mt-3 poppins-font text-[#6b8994] px-2">
+            A driven engineer committed to lifelong learning, crafting impactful solutions,
+            and approaching real-world challenges with innovation and attention to detail.
           </p>
 
-          <div className="space-x-4 flex justify-center mt-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
             <button
               onClick={() => scrollToSection("About")}
               className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 group-hover:from-green-500 group-hover:via-blue-600 group-hover:to-purple-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-800 shadow-lg active:scale-95 transition-transform duration-150"
@@ -84,10 +84,13 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="relative flex size-full justify-center overflow-hidden">
+
+        {/* Right: IconCloud */}
+        <div className="relative flex justify-center items-center w-full h-full sm:h-[400px] md:h-[500px] lg:h-auto overflow-hidden">
           <IconCloud images={images} />
         </div>
       </div>
+
     </>
   );
 }
