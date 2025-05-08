@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { FaInstagram, FaWhatsapp, FaTwitter, FaGithub, FaBars, FaTimes, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaTwitter, FaGithub, FaBars, FaTimes, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 export default function FloatingMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,8 +47,17 @@ export default function FloatingMenu() {
           isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
+        
         <a
-          href="https://instagram.com"
+          href="https://www.facebook.com/share/1YLXBryU27/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-600 p-2 rounded-full hover:bg-blue-700"
+        >
+          <FaFacebook className="text-white text-lg" />
+        </a>
+        <a
+          href="https://www.instagram.com/gili_gili_6u?igsh=MXU5ZTF0YW41c24zOA=="
           target="_blank"
           rel="noopener noreferrer"
           className="bg-pink-500 p-2 rounded-full hover:bg-pink-600"
@@ -80,7 +89,7 @@ export default function FloatingMenu() {
           <FaGithub className="text-white text-lg" />
         </a>
         <a
-          href="www.linkedin.com/in/rahul-ghosh-rg0371"
+          href="https://www.linkedin.com/in/rahul-ghosh-b0b660254/?trk=public-profile-join-page"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-600 p-2 rounded-full hover:bg-gray-700"
