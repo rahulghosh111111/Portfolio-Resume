@@ -56,7 +56,7 @@ export default function FloatingMenu() {
           <FaInstagram className="text-white text-lg" />
         </a>
         <a
-          href="https://wa.me/9007755859"
+          href="https://wa.me/9749000371"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 p-2 rounded-full hover:bg-green-600"
@@ -64,7 +64,7 @@ export default function FloatingMenu() {
           <FaWhatsapp className="text-white text-lg" />
         </a>
         <a
-          href="https://x.com/SudeepKumarMa10"
+          href="https://x.com/RahulGhosh9749?t=LDnWgxJP--F2UN4gE5HzWA&s=09"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-400 p-2 rounded-full hover:bg-blue-500"
@@ -72,7 +72,7 @@ export default function FloatingMenu() {
           <FaTwitter className="text-white text-lg" />
         </a>
         <a
-          href="https://github.com/Sudeep2704"
+          href="https://github.com/rahulghosh111111/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gray-800 p-2 rounded-full hover:bg-gray-700"
@@ -80,7 +80,7 @@ export default function FloatingMenu() {
           <FaGithub className="text-white text-lg" />
         </a>
         <a
-          href="https://www.linkedin.com/in/sudeep-kumar-manna-190356273/"
+          href="www.linkedin.com/in/rahul-ghosh-rg0371"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-600 p-2 rounded-full hover:bg-gray-700"

@@ -12,7 +12,7 @@ const cardContent = [
   { hoverText: "Decode and Dominate Hackathon", bgImage: "/decodom.png", githubLink: "https://github.com/rahulghosh111111/Decode-And-Dominate", websiteLink: "https://yourwebsite.com", defaultText: "Decode and Dominate Hackathon" },
   { hoverText: "Calculator for-kprep", bgImage: "/sgpa.png", githubLink: "https://github.com/rahulghosh111111/SGPA-Calculator", websiteLink: "https://sgpa-calculator-for-kprep-website.vercel.app/", defaultText: "SGPA Calculator" },
   { hoverText: "Movie Recommender", bgImage: "/movie.png", githubLink: "https://github.com/rahulghosh111111/React-Movie-App", websiteLink: "https://react-movie-app-git-master-rahul-ghoshs-projects-1a75945a.vercel.app/", defaultText: "Movie-Recommender" },
-  { hoverText: "Heart Disease Prediction", bgImage: "/Heart.png", githubLink: "https://github.com/Sudeep2704/Study-on-Japan-Life-Expectancy", websiteLink: "#", defaultText: "Japan Life Expectancy" },
+  { hoverText: "Heart Disease Prediction", bgImage: "/Heart.png", githubLink: "https://github.com/rahulghosh111111/Heart-Disease-prediction", websiteLink: "#", defaultText: "Japan Life Expectancy" },
   { hoverText: "Product Recommender System", bgImage: "/productRecomender.png", githubLink: "https://github.com/rahulghosh111111/Product-Review-and-Recommended-System-", websiteLink: "#", defaultText: "Product Recommender System" }
 ];
  
