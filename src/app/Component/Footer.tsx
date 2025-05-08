@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import {

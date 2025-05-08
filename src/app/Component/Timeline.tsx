@@ -93,15 +93,7 @@ const EducationExperience = () => {
         </div>
       </div>
 
-      {/* Experience Section */}
-      {/* <div className="mb-12">
-        <h3 className="text-xl font-semibold text-[#6b8994] mb-4">extracurricular</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {experience.map((exp, index) => (
-            <Card key={index} {...exp} icon={<FaBriefcase />} />
-          ))}
-        </div>
-      </div> */}
+      
 
       {/* Certification Section */}
       <div className="mb-12">
