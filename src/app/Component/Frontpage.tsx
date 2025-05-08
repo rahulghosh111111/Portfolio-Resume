@@ -55,7 +55,7 @@ export default function Home() {
           <div className="text-white text-4xl text-center aurora-text font-bold">
             Dream. Develop. Disrupt.
           </div>
-          <h2 className="text-center mt-2 text-xl">I'm Rahul Ghosh</h2>
+          <h2 className="text-center mt-2 text-xl">I&apos;m Rahul Ghosh</h2>
           <p className="text-center max-w-2xl mx-auto mt-3 poppins-font text-[#6b8994] px-2">
             A driven engineer committed to lifelong learning, crafting impactful solutions,
             and approaching real-world challenges with innovation and attention to detail.
