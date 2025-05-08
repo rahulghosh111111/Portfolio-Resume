@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaBriefcase, FaGraduationCap, FaCertificate, FaStar } from "react-icons/fa";
+import { FaGraduationCap, FaCertificate, FaStar } from "react-icons/fa";
 
 const education = [
   { title: "B.Tech in Computer Science", place: "KIIT University", year: "2022 - 2026", type: "Full-time" },

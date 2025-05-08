@@ -2,7 +2,7 @@
 import { ShineBorder } from "../../components/magicui/shine-border";
 import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { BlurFade } from "../../components/magicui/blur-fade";
+
 
 const cardContent = [
   { hoverText: "Weather Dashboard", bgImage: "/WeatherDashboard.png", githubLink: "https://github.com/rahulghosh111111/Weather-Dashboard", websiteLink: "https://weather-dashboard-99sk.vercel.app/", defaultText: "Weather Dashboard" },
