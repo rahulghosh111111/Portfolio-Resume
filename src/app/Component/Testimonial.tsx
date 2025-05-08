@@ -9,13 +9,13 @@ const testimonials = [
     id: 1,
     name: "Sudeep Kumar manna",
     comment: "Always reliable during projects, easy to work with, and quick to figure things out.",
-    image: "https://res.cloudinary.com/dgzfetdxv/image/upload/f_auto,q_auto/hncswxe0dujwx8qv8gny",
+    image: "https://res.cloudinary.com/due7g7gky/image/upload/v1746691106/zrhu8rz6yon3anjxg1bj.jpg",
   },
   {
     id: 2,
     name: "Soumyadeep Maity",
     comment: "Good at solving issues calmly,open to suggestions, and made team work smoother. ",
-    image: "https://res.cloudinary.com/dgzfetdxv/image/upload/f_auto,q_auto/vll3ca3gensgdnw1jsuk",
+    image: "https://res.cloudinary.com/due7g7gky/image/upload/v1746691106/m5wi7jtsnkne0mczvkzt.jpg",
   },
   {
     id: 3,
