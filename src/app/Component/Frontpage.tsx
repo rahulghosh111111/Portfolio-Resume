@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-row mt-10 h-screen bg-[#0b0c10]">
+      <div className="flex flex-row mt-10 h-screen md:flex-row bg-[#0b0c10]">
         <div className="flex flex-col items-center justify-center w-full text-center">
           <div className="text-white  text-4xl text-center aurora-text font-bold">
             Dream. Develop. Disrupt.
