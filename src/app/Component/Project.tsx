@@ -2,6 +2,7 @@
 import { ShineBorder } from "../../components/magicui/shine-border";
 import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { BlurFade } from "../../components/magicui/blur-fade";
 
 const cardContent = [
   { hoverText: "Weather Dashboard", bgImage: "/WeatherDashboard.png", githubLink: "https://github.com/rahulghosh111111/Weather-Dashboard", websiteLink: "https://weather-dashboard-99sk.vercel.app/", defaultText: "Weather Dashboard" },
@@ -14,12 +15,13 @@ const cardContent = [
   { hoverText: "Heart Disease Prediction", bgImage: "/Heart.png", githubLink: "https://github.com/Sudeep2704/Study-on-Japan-Life-Expectancy", websiteLink: "#", defaultText: "Japan Life Expectancy" },
   { hoverText: "Product Recommender System", bgImage: "/productRecomender.png", githubLink: "https://github.com/rahulghosh111111/Product-Review-and-Recommended-System-", websiteLink: "#", defaultText: "Product Recommender System" }
 ];
-
+ 
 const CardComponent: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <>
+    
       <h1 className="text-center playfair-display-font text-4xl font-bold">Projects</h1>
       <h2 className="text-center text-lg italic mt-2">&quot;Turning ideas into reality through code.&quot;</h2>
       <h2 className="text-center poppins-font max-w-2xl mx-auto mt-2 text-[#6b8994]">

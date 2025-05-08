@@ -14,9 +14,9 @@ const Footer = () => {
             <h3 className="text-lg font-bold playfair-display-font text-gray-300 mb-2">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-blue-400 poppins-font">Home</Link></li>
-              <li><Link href="/about" className="hover:text-blue-400 poppins-font">About</Link></li>
-              <li><Link href="/projects" className="hover:text-blue-400 poppins-font">Projects</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-400 poppins-font">Contact</Link></li>
+              <li><Link href="/About" className="hover:text-blue-400 poppins-font">About</Link></li>
+              <li><Link href="/Projects" className="hover:text-blue-400 poppins-font">Projects</Link></li>
+              <li><Link href="/Contact" className="hover:text-blue-400 poppins-font">Contact</Link></li>
             </ul>
           </nav>
 
@@ -24,19 +24,19 @@ const Footer = () => {
           <div className="mb-6">
             <h3 className="text-lg font-bold playfair-display-font text-gray-300 mb-2">Connect With Me</h3>
             <div className="flex space-x-5">
-              <a href="https://github.com/Sudeep2704" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              <a href="https://github.com/rahulghosh111111" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
                 <FaGithub size={22} />
               </a>
-              <a href="https://www.linkedin.com/in/sudeep-kumar-manna-190356273/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              <a href="https://www.linkedin.com/in/rahul-ghosh-b0b660254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
                 <FaLinkedin size={22} />
               </a>
-              <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              <a href="https://x.com/RahulGhosh9749?t=LDnWgxJP--F2UN4gE5HzWA&s=09er" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
                 <FaTwitter size={22} />
               </a>
-              <a href="mailto:ds.sudeep04@gmail.com" className="hover:text-blue-400">
+              <a href="mailto:rahulghosh111111@gmail.com" className="hover:text-blue-400">
                 <FaEnvelope size={22} />
               </a>
-              <a href="https://wa.me/9007755859" className="hover:text-blue-400">
+              <a href="https://wa.me/9749000371" className="hover:text-blue-400">
                 <FaWhatsapp size={22} />
               </a>
             </div>
@@ -63,7 +63,7 @@ const Footer = () => {
           <p className="text-[#6b8994] poppins-font text-sm mb-3">This is a raw website with minimal design with the sole purpose of showcasing my personal portfolio!</p>
           <button className="bg-blue-500 mt-5 text-white font-bold p-3 rounded-md transition transform hover:scale-105 active:scale-95 shadow-lg">
             <a 
-              href="/Resume_Sudeep.pdf" 
+              href="https://drive.google.com/file/d/1RbMdmwkCKZx5Sdj7WCX4H3sFxQrug3j4/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
             >
