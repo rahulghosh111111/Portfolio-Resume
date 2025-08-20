@@ -6,8 +6,8 @@ import React from "react";
 export default function Services() {
   const cards = [
     {
-      title: "Developer",
-      description: "Building efficient and scalable web applications, ensuring smooth performance and great user experiences",
+      title: "Full Stack Developer",
+      description: "Building efficient and scalable Full Stack web applications, ensuring smooth performance and great user experiences",
     },
     {
       title: "Designer",
@@ -15,7 +15,7 @@ export default function Services() {
     },
     {
       title: "Content Creator",
-      description: "vlogging and creating engaging content to share knowledge and insights with the world",
+      description: "Vlogging and creating engaging content to share knowledge and insights with the world",
     },
   ];
 

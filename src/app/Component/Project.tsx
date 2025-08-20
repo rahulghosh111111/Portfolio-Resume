@@ -5,13 +5,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 
 const cardContent = [
+    { hoverText: "Kareer-Grow(Job Portal)", bgImage: "/KareerGrow.png", githubLink: "https://github.com/rahulghosh111111/Kareer-Grow", websiteLink: "https://github.com/rahulghosh111111/Kareer-Grow", defaultText: "Kareer-Grow" },
   { hoverText: "Weather Dashboard", bgImage: "/WeatherDashboard.png", githubLink: "https://github.com/rahulghosh111111/Weather-Dashboard", websiteLink: "https://weather-dashboard-99sk.vercel.app/", defaultText: "Weather Dashboard" },
   { hoverText: "K-prep Website", bgImage: "/kprep.png", githubLink: "#", websiteLink: "https://www.kprep.in/", defaultText: "Kprep Website" },
   { hoverText: "CodingNinjas Kiit", bgImage: "/cnkiit.png", githubLink: "#", websiteLink: "https://www.cnkiit.in/", defaultText: "CodingNinjas Kiit" },
   { hoverText: "Salary Prediction", bgImage: "/salaryprediction.png", githubLink: "https://github.com/rahulghosh111111/Salary-Prediction-ML", websiteLink: "#", defaultText: "Salary Prediction" },
   { hoverText: "Decode and Dominate Hackathon", bgImage: "/decodom.png", githubLink: "https://github.com/rahulghosh111111/Decode-And-Dominate", websiteLink: "https://yourwebsite.com", defaultText: "Decode and Dominate Hackathon" },
   { hoverText: "Calculator for-kprep", bgImage: "/sgpa.png", githubLink: "https://github.com/rahulghosh111111/SGPA-Calculator", websiteLink: "https://sgpa-calculator-for-kprep-website.vercel.app/", defaultText: "SGPA Calculator" },
-  { hoverText: "Movie Recommender", bgImage: "/movie.png", githubLink: "https://github.com/rahulghosh111111/React-Movie-App", websiteLink: "https://react-movie-app-git-master-rahul-ghoshs-projects-1a75945a.vercel.app/", defaultText: "Movie-Recommender" },
   { hoverText: "Heart Disease Prediction", bgImage: "/Heart.png", githubLink: "https://github.com/rahulghosh111111/Heart-Disease-prediction", websiteLink: "#", defaultText: "Japan Life Expectancy" },
   { hoverText: "Product Recommender System", bgImage: "/productRecomender.png", githubLink: "https://github.com/rahulghosh111111/Product-Review-and-Recommended-System-", websiteLink: "#", defaultText: "Product Recommender System" }
 ];
@@ -32,7 +32,7 @@ const CardComponent: React.FC = () => {
           {cardContent.map((content, index) => (
             <div
               key={index}
-              className="w-[336px] h-52 flex items-center justify-center text-xl font-semibold rounded-md shadow-md cursor-pointer transition-transform transform hover:scale-105 text-white bg-cover bg-center relative overflow-hidden"
+              className="w-[336px] h-52 flex items-center justify-center text-xl font-semibold rounded-md shadow-md cursor-pointer transition-transform transform hover:scale-105  hover:text-blue-600  bg-cover bg-center relative overflow-hidden"
               style={{ backgroundImage: `url(${content.bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}

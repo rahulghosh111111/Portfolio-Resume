@@ -14,10 +14,12 @@ const education = [
 // ];
 
 const certification = [
+  { title: "Java Full Stack Developer", place: "Great Learning", year: "June 2025 - Aug 2025", type: "Certification" },
   { title: "Health Systems Development: Health systems,Policy and Research", place: "Coursera, Imperial College London", year: "Feb 2025 - Mar 2025", type: "Certification" },
   { title: " Health Systems Development: Introduction to Health Systems", place: "Coursera, Imperial College London", year: "Feb 2025 - Mar 2025", type: "Certification" },
   { title: "Data Structures and Algorithms", place: "Excelr", year: "Feb 2024 - Mar 2024", type: "Certification" },
   { title: "DSA and System Design", place: "PW Skills", year: "Oct 2023 - Dec 2024", type: "Certification" },
+
 ];
 
 const extracurricular = [
