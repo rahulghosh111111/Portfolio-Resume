@@ -2,7 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['cdn.simpleicons.org', 'res.cloudinary.com'], // Add this line to allow loading images from Simple Icons
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.simpleicons.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
   },
 };
 

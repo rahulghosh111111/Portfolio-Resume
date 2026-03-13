@@ -156,6 +156,8 @@ body {
 }
 
 @theme inline {
+  --font-playfair: "Playfair Display", serif;
+  --font-poppins: "Poppins", sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
