@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 
 const icons = [
@@ -51,7 +52,7 @@ const IconsGrid = () => {
             key={index}
             className="flex flex-col items-center justify-center gap-2 group transition-all duration-300"
           >
-            <img
+            <Image
               src={`https://cdn.simpleicons.org/${name}/${color}`}
               alt={label}
               className="w-12 h-12 group-hover:scale-110 transition-all duration-300"
