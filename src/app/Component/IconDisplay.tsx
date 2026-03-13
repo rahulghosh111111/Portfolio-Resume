@@ -58,6 +58,7 @@ const IconsGrid = () => {
               className="w-12 h-12 group-hover:scale-110 transition-all duration-300"
               width={48}
               height={48}
+              unoptimized
             />
             <p className="text-sm text-gray-600 group-hover:text-blue-500">{label}</p>
           </div>
