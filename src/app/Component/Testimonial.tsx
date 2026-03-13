@@ -109,7 +109,7 @@ const TestimonialCard = () => {
           {/* Stat 2 */}
           <div className="text-center">
             <NumberTicker
-              value={startTicker ? 7 : 0}
+              value={startTicker ? 12 : 0}
               className="text-3xl sm:text-4xl font-medium tracking-tighter text-white dark:text-black"
             />
             <p className="text-xs sm:text-sm text-gray-400 mt-1">&ldquo;Satisfied Clients&rdquo;</p>
@@ -118,7 +118,7 @@ const TestimonialCard = () => {
           {/* Stat 3 */}
           <div className="text-center">
             <NumberTicker
-              value={startTicker ? 15 : 0}
+              value={startTicker ? 45 : 0}
               className="text-3xl sm:text-4xl font-medium tracking-tighter text-white dark:text-black"
             />
             <p className="text-xs sm:text-sm text-gray-400 mt-1">&ldquo;Finished Projects&rdquo;</p>
