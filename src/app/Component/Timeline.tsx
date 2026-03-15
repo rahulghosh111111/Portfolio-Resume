@@ -1,115 +1,84 @@
 import React from 'react';
-
+import Image from 'next/image';
 import { FaGraduationCap, FaCertificate, FaStar } from "react-icons/fa";
+import { allTimelineItems } from '../../lib/data';
+import { TimelineItem } from '../../lib/types';
 
-const education = [
-  { title: "B.Tech in Computer Science", place: "KIIT University", year: "2022 - 2026", type: "Full-time" },
-  { title: "Higher Secondary", place: "Taldangra Fulmati High School, WestBengal", year: "2019 - 2021", type: "Education" },
-  { title: "Secondary Education", place: "Taldangra Fulmati High School, WestBengal", year: "2010 - 2019", type: "Education" },
-];
+const BentoCard = ({ item }: { item: TimelineItem }) => {
+  const { title, place, year, type, category, description, spanClassName, image } = item;
 
-// const experience = [
-//   { title: "Full Stack Intern", place: "RNPsoft", year: "Sept 2024 - Dec 2024", type: "Internship" },
-//   { title: "Web Developer Intern", place: "Synexoo Technologies", year: "May 2024 - Jul 2024", type: "Internship" },
-// ];
+  // Resolve icon based on category or type
+  let icon = <FaGraduationCap size={20} />;
+  if (category === 'experience' || type === 'Internship') {
+    icon = <FaStar size={20} />;
+  } else if (category === 'certification') {
+    icon = <FaCertificate size={20} />;
+  }
 
-const certification = [
-  { title: "Java Full Stack Developer", place: "Great Learning", year: "June 2025 - Aug 2025", type: "Certification" },
-  { title: "Health Systems Development: Health systems,Policy and Research", place: "Coursera, Imperial College London", year: "Feb 2025 - Mar 2025", type: "Certification" },
-  { title: " Health Systems Development: Introduction to Health Systems", place: "Coursera, Imperial College London", year: "Feb 2025 - Mar 2025", type: "Certification" },
-  { title: "Data Structures and Algorithms", place: "Excelr", year: "Feb 2024 - Mar 2024", type: "Certification" },
-  { title: "DSA and System Design", place: "PW Skills", year: "Oct 2023 - Dec 2024", type: "Certification" },
-
-];
-
-const extracurricular = [
-  { title: "Core Operations Team", place: "K-Prep", year: "May 2024 - Jul 2024", type: "Full-time" },
-  { title: "Web Developer", place: "Coding Ninjas KIIT", year: "May 2024 - Jul 2024", type: "Part-time" },
-];
-
-// Updated Card component
-const Card = ({
-  title,
-  place,
-  year,
-  type,
-  icon,
-}: {
-  title: string;
-  place: string;
-  year: string;
-  type: string;
-  icon: React.ReactNode; // Updated the type for icon to React.ReactNode
-}) => (
-  <div className="relative p-6 bg-white shadow-md rounded-lg border border-gray-200 transition-transform transform hover:scale-105 hover:border-blue-500 hover:shadow-lg flex items-center gap-4 sm:flex-row flex-col text-center sm:text-left">
-    {/* Badge */}
-    <span
-      className={`absolute top-2 right-2 text-xs font-semibold px-3 py-1 rounded-full ${
-        type === "Internship"
-          ? "bg-blue-100 text-blue-600"
-          : type === "Full-time"
-          ? "bg-green-100 text-green-600"
-          : type === "Certification"
-          ? "bg-purple-100 text-purple-600"
-          : "bg-gray-100 text-gray-600"
-      }`}
-    >
-      {type}
-    </span>
-
-    {/* Icon */}
-    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full shadow-lg">
-      {icon}
+  return (
+    <div className={`group relative p-6 rounded-2xl bg-neutral-900/40 border border-white/5 backdrop-blur-xl transition-all duration-500 hover:scale-[1.02] hover:border-white/10 hover:shadow-2xl hover:shadow-cyan-500/5 flex flex-col justify-start gap-4 overflow-hidden ${spanClassName || "col-span-1"}`}>
+      {/* Background Glow Effect on Hover */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      <div>
+        <div className="flex justify-between items-start">
+          <div className="p-3 rounded-xl bg-gradient-to-br from-neutral-800 to-neutral-800/40 border border-white/5 text-cyan-400 group-hover:text-cyan-300 transition-colors flex items-center justify-center w-11 h-11">
+            {image ? (
+              <Image src={image} alt={title} width={24} height={24} className="object-contain" />
+            ) : (
+              icon
+            )}
+          </div>
+          <span className="text-xs font-medium px-3 py-1 bg-white/5 backdrop-blur-sm border border-white/5 rounded-full text-neutral-400 group-hover:text-neutral-300 transition-colors">
+            {type}
+          </span>
+        </div>
+        <div className="mt-5">
+          <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-neutral-400 transition-all duration-300">{title}</h3>
+          <p className="text-neutral-400 text-sm mt-1">{place}</p>
+        </div>
+      </div>
+      
+      <div className="mt-5">
+        {description && (
+          <p className="text-neutral-500 text-sm mb-4 leading-relaxed group-hover:text-neutral-400 transition-colors">
+            {description}
+          </p>
+        )}
+        <div className="flex items-center justify-between mt-auto">
+            <p className="text-cyan-500/80 text-xs font-mono tracking-wider">{year}</p>
+            {category === 'education' && <span className="text-xs text-neutral-600">Graduation</span>}
+        </div>
+      </div>
+      {/* Background Watermark Logo */}
+      {image && (
+        <div className="absolute inset-0 flex items-center justify-center -z-10 opacity-[0.04] overflow-hidden pointer-events-none">
+          <div className="w-72 h-72 relative">
+            <Image src={image} alt="" fill className="object-contain" />
+          </div>
+        </div>
+      )}
     </div>
-
-    {/* Content */}
-    <div>
-      <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-      <p className="text-gray-600">{place}</p>
-      <p className="text-sm text-gray-500">{year}</p>
-    </div>
-  </div>
-);
+  );
+};
 
 const EducationExperience = () => {
   return (
-    <div className="max-w-4xl mx-auto py-16 px-6">
-      <h2 className="text-3xl playfair-display-font font-bold text-center mb-8">Education & Experience</h2>
+    <div className="max-w-6xl mx-auto py-16 px-6">
+      <h2 className="text-4xl playfair-display-font font-bold text-center mb-3 text-white">
+        Education & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Experience</span>
+      </h2>
+      <p className="text-center text-neutral-500 mb-12 max-w-2xl mx-auto">
+I design and develop scalable web applications, ensuring smooth performance and great user experiences. From frontend to backend, I build secure, efficient, and optimized solutions.      </p>
 
-      {/* Education Section */}
-      <div className="mb-12">
-        <h3 className="text-xl font-semibold text-[#6b8994] mb-4">🎓 Education</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {education.map((edu, index) => (
-            <Card key={index} {...edu} icon={<FaGraduationCap />} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+        {allTimelineItems.map((item) => (
+          <BentoCard key={item.id} item={item} />
+        ))}
       </div>
-      {/* Extracurricular Section */}
-      <div className="mb-12">
-        <h3 className="text-xl font-semibold text-[#6b8994] mb-4">💼 Experience</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {extracurricular.map((cert, index) => (
-            <Card key={index} {...cert} icon={<FaStar />} />
-          ))}
-        </div>
-      </div>
-
-      
-
-      {/* Certification Section */}
-      <div className="mb-12">
-        <h3 className="text-xl font-semibold text-[#6b8994] mb-4">📃 Certifications</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {certification.map((cert, index) => (
-            <Card key={index} {...cert} icon={<FaCertificate />} />
-          ))}
-        </div>
-      </div>
-
-      
     </div>
   );
 };
 
 export default EducationExperience;
+
