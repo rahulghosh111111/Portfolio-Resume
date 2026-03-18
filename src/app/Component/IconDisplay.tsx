@@ -45,7 +45,7 @@ const IconsGrid = () => {
   return (
     <>
     <div className="max-w-5xl mx-auto py-12 px-6">
-      <h2 className="text-3xl playfair-display-font font-bold text-center mb-9">Tech Stack & Tools</h2>
+      <h2 className="text-3xl playfair-display-font font-bold text-center aurora-text mb-9">Tech Stack & Tools</h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center">
         {icons.map(({ name, label, color }, index) => (
           <div

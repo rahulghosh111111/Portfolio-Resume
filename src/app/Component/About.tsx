@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <h1 className="text-4xl playfair-display-font text-white font-bold text-center my-5 font-playfair">
+      <h1 className="text-4xl playfair-display-font text-white aurora-text font-bold text-center my-5 font-playfair">
         About Me
       </h1>
       <h2 className="text-center text-lg italic mt-2">

@@ -79,8 +79,8 @@ const EducationExperience = () => {
 
   return (
     <div className="max-w-6xl mx-auto py-16 px-6">
-      <h2 className="text-4xl playfair-display-font font-bold text-center mb-16 text-white">
-        Education & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Experience</span>
+      <h2 className="text-4xl playfair-display-font font-bold text-center mb-16 text-white aurora-text">
+        Education <span>&</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Experience</span>
       </h2>
 
       {/* Education Section */}

@@ -51,7 +51,7 @@ export default function Navbar() {
       speed={1}
       colorFrom="#fff"
       colorTo="black"
-      className="text-4xl font-semibold tracking-tight"
+      className="text-5xl pr-10 font-semibold tracking-tight"
     >
       Rahul
     </AnimatedGradientText>
