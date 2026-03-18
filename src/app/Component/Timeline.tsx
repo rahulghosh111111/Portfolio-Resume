@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaGraduationCap, FaCertificate, FaStar } from "react-icons/fa";
-import { allTimelineItems } from '../../lib/data';
+import { educationItems, experienceItems, certificationItems } from '../../lib/data';
 import { TimelineItem } from '../../lib/types';
 
 const BentoCard = ({ item }: { item: TimelineItem }) => {
-  const { title, place, year, type, category, description, spanClassName, image } = item;
+  const { title, place, year, type, category, description, spanClassName, image, link } = item;
 
   // Resolve icon based on category or type
   let icon = <FaGraduationCap size={20} />;
@@ -29,9 +29,21 @@ const BentoCard = ({ item }: { item: TimelineItem }) => {
               icon
             )}
           </div>
-          <span className="text-xs font-medium px-3 py-1 bg-white/5 backdrop-blur-sm border border-white/5 rounded-full text-neutral-400 group-hover:text-neutral-300 transition-colors">
-            {type}
-          </span>
+          {category === 'certification' ? (
+            <a 
+              href={link || "#"} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs font-medium px-4 py-1.5 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 rounded-full text-cyan-400 hover:text-cyan-300 transition-all duration-300 cursor-pointer flex items-center gap-1 shadow-md shadow-cyan-500/5 hover:shadow-cyan-500/10 hover:scale-105 active:scale-95"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FaCertificate size={12} className="text-cyan-400/80" /> {type}
+            </a>
+          ) : (
+            <span className="text-xs font-medium px-3 py-1 bg-white/5 backdrop-blur-sm border border-white/5 rounded-full text-neutral-400 group-hover:text-neutral-300 transition-colors">
+              {type}
+            </span>
+          )}
         </div>
         <div className="mt-5">
           <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-neutral-400 transition-all duration-300">{title}</h3>
@@ -63,18 +75,36 @@ const BentoCard = ({ item }: { item: TimelineItem }) => {
 };
 
 const EducationExperience = () => {
+  const experiencesAndCerts = [...experienceItems, ...certificationItems];
+
   return (
     <div className="max-w-6xl mx-auto py-16 px-6">
-      <h2 className="text-4xl playfair-display-font font-bold text-center mb-3 text-white">
+      <h2 className="text-4xl playfair-display-font font-bold text-center mb-16 text-white">
         Education & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Experience</span>
       </h2>
-      <p className="text-center text-neutral-500 mb-12 max-w-2xl mx-auto">
-I design and develop scalable web applications, ensuring smooth performance and great user experiences. From frontend to backend, I build secure, efficient, and optimized solutions.      </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
-        {allTimelineItems.map((item) => (
-          <BentoCard key={item.id} item={item} />
-        ))}
+      {/* Education Section */}
+      <div className="mb-20">
+        <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+          <FaGraduationCap className="text-cyan-400" /> Education
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+          {educationItems.map((item) => (
+            <BentoCard key={item.id} item={item} />
+          ))}
+        </div>
+      </div>
+
+      {/* Experience & Certifications Section */}
+      <div>
+        <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+          <FaStar className="text-cyan-400" /> Experience & Certifications
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+          {experiencesAndCerts.map((item) => (
+            <BentoCard key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ export interface TimelineItem {
   description?: string;
   spanClassName?: string; // e.g., "md:col-span-2 md:row-span-2"
   image?: string;
+  link?: string;
 }
 
 export interface ServiceItem {

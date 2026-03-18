@@ -63,7 +63,8 @@ export const certificationItems: TimelineItem[] = [
     year: "Feb 2026 - Mar 2026",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://drive.google.com/file/d/1XsQKxKl8RE74hrLZU37BbBhbLGdaepJ2/view?usp=drive_link"
   },
   {
     id: 'cert-2',
@@ -72,7 +73,8 @@ export const certificationItems: TimelineItem[] = [
     year: "Feb 2026 - Mar 2026",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://drive.google.com/file/d/17hMOgl4JqGuNaa5mTQ3nUjXO4hWIuYc1/view?usp=drive_link"
   },
   {
     id: 'cert-3',
@@ -81,7 +83,8 @@ export const certificationItems: TimelineItem[] = [
     year: "June 2025 - Aug 2025",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://drive.google.com/file/d/1C8RZpqg4RO2Onj_onb2hk5k2O-biLk-1/view?usp=sharing"
   },
   {
     id: 'cert-4',
@@ -90,7 +93,8 @@ export const certificationItems: TimelineItem[] = [
     year: "Feb 2025 - Mar 2025",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://drive.google.com/file/d/119cZ6rsgwz_UxgDS9EJIfnXrDhqkMhpG/view?usp=drive_link"
   },
   {
     id: 'cert-5',
@@ -99,7 +103,8 @@ export const certificationItems: TimelineItem[] = [
     year: "Feb 2025 - Mar 2025",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://drive.google.com/file/d/1jaxFZ-Q1PjqNrfZmeguTNwpq5F5aO8XO/view?usp=drive_link"
   },
   {
     id: 'cert-6',
@@ -108,7 +113,8 @@ export const certificationItems: TimelineItem[] = [
     year: "Feb 2024 - Mar 2024",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://drive.google.com/file/d/1Xlrrwx9B_Xun7sjRqEY6r_6-Wh5ukKNB/view?usp=sharing"
   },
   {
     id: 'cert-7',
@@ -117,7 +123,8 @@ export const certificationItems: TimelineItem[] = [
     year: "Oct 2023 - Dec 2024",
     type: "Certification",
     category: 'certification',
-    spanClassName: "md:col-span-1"
+    spanClassName: "md:col-span-1",
+    link: "https://github.com/rahulghosh111111/Coding-round-Questions-for-placement"
   }
 ];
 
