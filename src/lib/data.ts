@@ -58,6 +58,24 @@ export const experienceItems: TimelineItem[] = [
 export const certificationItems: TimelineItem[] = [
   {
     id: 'cert-1',
+    title: "API Security on Google Cloud's Apigee API Platform",
+    place: "Coursera, Google Cloud",
+    year: "Feb 2026 - Mar 2026",
+    type: "Certification",
+    category: 'certification',
+    spanClassName: "md:col-span-1"
+  },
+  {
+    id: 'cert-2',
+    title: "Software Engineering",
+    place: "Coursera, IBM",
+    year: "Feb 2026 - Mar 2026",
+    type: "Certification",
+    category: 'certification',
+    spanClassName: "md:col-span-1"
+  },
+  {
+    id: 'cert-3',
     title: "Java Full Stack Developer",
     place: "Great Learning",
     year: "June 2025 - Aug 2025",
@@ -66,7 +84,7 @@ export const certificationItems: TimelineItem[] = [
     spanClassName: "md:col-span-1"
   },
   {
-    id: 'cert-2',
+    id: 'cert-4',
     title: "Health Systems Policy and Research",
     place: "Coursera, Imperial College London",
     year: "Feb 2025 - Mar 2025",
@@ -75,7 +93,7 @@ export const certificationItems: TimelineItem[] = [
     spanClassName: "md:col-span-1"
   },
   {
-    id: 'cert-3',
+    id: 'cert-5',
     title: "Introduction to Health Systems",
     place: "Coursera, Imperial College London",
     year: "Feb 2025 - Mar 2025",
@@ -84,7 +102,7 @@ export const certificationItems: TimelineItem[] = [
     spanClassName: "md:col-span-1"
   },
   {
-    id: 'cert-4',
+    id: 'cert-6',
     title: "Data Structures and Algorithms",
     place: "Excelr",
     year: "Feb 2024 - Mar 2024",
@@ -93,7 +111,7 @@ export const certificationItems: TimelineItem[] = [
     spanClassName: "md:col-span-1"
   },
   {
-    id: 'cert-5',
+    id: 'cert-7',
     title: "DSA and System Design",
     place: "PW Skills",
     year: "Oct 2023 - Dec 2024",
