@@ -49,7 +49,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0e1b2c] text-white py-12">
+    <footer className="bg-transparent text-white py-12 border-t border-white/10">
+      <div className="backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
         {/* Left Section */}
         <div className="md:w-1/3 mb-8 md:mb-0 flex flex-col items-center text-center md:items-start md:text-left">
@@ -61,9 +62,8 @@ const Footer = () => {
                   <button
                     onClick={() => scrollToSection(section)}
                     onAnimationEnd={handleAnimationEnd}
-                    className={`cursor-pointer Inter-font hover:text-gray-300 transition-transform ${
-                      clicked === section ? "scale-110" : ""
-                    }`}
+                    className={`cursor-pointer Inter-font hover:text-gray-300 transition-transform ${clicked === section ? "scale-110" : ""
+                      }`}
                   >
                     {section}
                   </button>
@@ -142,6 +142,7 @@ const Footer = () => {
       <div className="text-center text-gray-400 poppins-font text-sm mt-8 mb-3 border-t border-gray-800 pt-4">
         <p>© {new Date().getFullYear()} Rahul Ghosh. All Rights Reserved.</p>
         <p>Made with ❤️ in Next.js</p>
+      </div>
       </div>
     </footer>
   );

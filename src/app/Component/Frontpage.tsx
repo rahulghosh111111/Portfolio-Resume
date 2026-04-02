@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row mt-8 min-h-screen bg-[#0b0c10]">
+      <div className="flex flex-col-reverse lg:flex-row mt-8 min-h-screen bg-transparent">
         {/* Left: Text Content */}
         <div className="flex flex-col items-center justify-center w-full text-center px-4 py-8 lg:px-10">
           <div className="text-white text-4xl text-center aurora-text font-bold">

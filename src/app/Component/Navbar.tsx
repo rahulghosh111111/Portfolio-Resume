@@ -44,17 +44,17 @@ export default function Navbar() {
   return (
     <>
       {/* Top Navbar */}
-      <nav className="fixed z-50 w-full left-0 top-0 right-0 flex bg-[#0e1b2c] border-white items-center justify-between p-5 md:px-10">
+      <nav className="fixed z-50 w-full left-0 top-0 right-0 flex bg-white/5 backdrop-blur-xl border-b border-white/10 items-center justify-between p-5 md:px-10">
         {/* Logo */}
         <div onClick={() => scrollToSection("Frontpage")} className="text-3xl font-bold cursor-pointer text-logo flex-1 text-center md:text-left">
-        <AnimatedGradientText
-      speed={1}
-      colorFrom="#fff"
-      colorTo="black"
-      className="text-5xl pr-10 font-semibold tracking-tight"
-    >
-      Rahul
-    </AnimatedGradientText>
+          <AnimatedGradientText
+            speed={1}
+            colorFrom="#fff"
+            colorTo="black"
+            className="text-5xl pr-10 font-semibold tracking-tight"
+          >
+            Rahul
+          </AnimatedGradientText>
         </div>
 
         {/* Navbar items (Desktop view) */}
@@ -63,9 +63,8 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => scrollToSection("Frontpage")}
-                className={`cursor-pointer Inter-font hover:text-gray-300 ${
-                  clicked === "Frontpage" ? "scale-110 transition-transform" : ""
-                }`}
+                className={`cursor-pointer Inter-font hover:text-gray-300 ${clicked === "Frontpage" ? "scale-110 transition-transform" : ""
+                  }`}
                 onAnimationEnd={handleAnimationEnd}
               >
                 <AuroraText>Home</AuroraText>
@@ -74,9 +73,8 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => scrollToSection("About")}
-                className={`cursor-pointer Inter-font hover:text-gray-300 ${
-                  clicked === "About" ? "scale-110 transition-transform" : ""
-                }`}
+                className={`cursor-pointer Inter-font hover:text-gray-300 ${clicked === "About" ? "scale-110 transition-transform" : ""
+                  }`}
                 onAnimationEnd={handleAnimationEnd}
               >
                 <AuroraText>About</AuroraText>
@@ -85,9 +83,8 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => scrollToSection("Services")}
-                className={`cursor-pointer Inter-font hover:text-gray-300 ${
-                  clicked === "Services" ? "scale-110 transition-transform" : ""
-                }`}
+                className={`cursor-pointer Inter-font hover:text-gray-300 ${clicked === "Services" ? "scale-110 transition-transform" : ""
+                  }`}
                 onAnimationEnd={handleAnimationEnd}
               >
                 <AuroraText>Services</AuroraText>
@@ -96,9 +93,8 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => scrollToSection("Projects")}
-                className={`cursor-pointer Inter-font hover:text-gray-300 ${
-                  clicked === "Projects" ? "scale-110 transition-transform" : ""
-                }`}
+                className={`cursor-pointer Inter-font hover:text-gray-300 ${clicked === "Projects" ? "scale-110 transition-transform" : ""
+                  }`}
                 onAnimationEnd={handleAnimationEnd}
               >
                 <AuroraText>Projects</AuroraText>
@@ -107,9 +103,8 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => scrollToSection("Testimonials")}
-                className={`cursor-pointer Inter-font hover:text-gray-300 ${
-                  clicked === "Testimonials" ? "scale-110 transition-transform" : ""
-                }`}
+                className={`cursor-pointer Inter-font hover:text-gray-300 ${clicked === "Testimonials" ? "scale-110 transition-transform" : ""
+                  }`}
                 onAnimationEnd={handleAnimationEnd}
               >
                 <AuroraText>Testimonials</AuroraText>
@@ -118,9 +113,8 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => scrollToSection("Contact")}
-                className={`cursor-pointer Inter-font hover:text-gray-300 ${
-                  clicked === "Contact" ? "scale-110 transition-transform" : ""
-                }`}
+                className={`cursor-pointer Inter-font hover:text-gray-300 ${clicked === "Contact" ? "scale-110 transition-transform" : ""
+                  }`}
                 onAnimationEnd={handleAnimationEnd}
               >
                 <AuroraText>Contact</AuroraText>
@@ -131,7 +125,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Footer Navbar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white flex justify-around p-4 md:hidden z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-white/5 backdrop-blur-xl border-t border-white/10 text-white flex justify-around p-4 md:hidden z-50">
         <button onClick={() => scrollToSection("Frontpage")} className="flex flex-col items-center text-sm">
           <FaHome className="text-xl" />
         </button>

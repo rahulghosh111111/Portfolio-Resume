@@ -17,8 +17,17 @@ import FloatingMenu from "./Component/FloatingMenu";
 
 // Reusable animation variant
 const revealVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 50, scale: 0.95, filter: "blur(10px)" },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1, 
+    filter: "blur(0px)",
+    transition: { 
+      duration: 1, 
+      ease: [0.22, 1, 0.36, 1], // Custom cubic-bezier for smoother feel
+    } 
+  },
 };
 
 export default function Home() {
